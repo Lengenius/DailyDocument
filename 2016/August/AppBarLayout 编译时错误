@@ -1,0 +1,14 @@
+```
+@string/appbar_scrolling_view_behavior
+```
+有时候会在编译时出错，为什么呢？
+先让我们看看不出错的时候它的值是什么？
+```
+<string name="appbar_scrolling_view_behavior" 
+translatable="false">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
+```
+这段值`android.support.design.widget.AppBarLayout`是什么意思呢？
+AppBarLayout 是support design 包中引入的新布局形式。
+这样我们只需要在相应的Gradle 文件中引入对应的依赖就可以了。
+
+`compile 'com.android.support:design:23.4.0'` 就可以很好的完成任务。最好是根据你的相应包文件来引入，那么在AS 中可以直接搜索得到。

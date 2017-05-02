@@ -1,0 +1,7 @@
+`Could not find property 'MyOpenWeatherMapApiKey' on com.android.build.gradle.AppExtension_Decorated@450e6e5c. <a href="openFile:/Users/Frank/WorkSpaces/Sunshine-Version-2/app/build.gradle">Open File</a>`
+问题解决。
+
+在gradle.properties 文件中添加
+
+MyOpenWeatherMapApiKey = "xxxxxxx"
+即可。
