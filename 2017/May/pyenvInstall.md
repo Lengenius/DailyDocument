@@ -18,7 +18,7 @@ python 有着众多的发型版本，有人推荐使用Anaconda 管理相关包�
 从Homebrew 安装。`brew install pyenv` 即可。
 
 理解pyenv
-pyenv 的原理大概修改python 对应的一个路径 ~/.bash_profile 文件中有一个PATH 变量，当你在命令行输入命令的时候，shell 会根据这个文件按照从下到上，从左到右的顺序去搜索对应的文件名打开相应的文件。pyenv 会在这个变量中增加一个shim 文件夹，并管理其中的内容，从而实现python版本的切换。
+pyenv 的原理大概修改python 对应的一个路径 `~/.bash_profile` 文件中有一个PATH 变量，当你在命令行输入命令的时候，shell 会根据这个文件按照从下到上，从左到右的顺序去搜索对应的文件名打开相应的文件。pyenv 会在这个变量中增加一个shim 文件夹，并管理其中的内容，从而实现python版本的切换。
 `pyenv versions` 会显示已经安装的python 版本。但是一开始只会显示一个system 的版本，这是由于，从官网下载的python 并没有安装在pyenv 都应的管理文件夹下面。 你需要通过`pyenv install --list` 获取可安装的版本列表，重新安装才行。
 
 安装过程中遇到的问题
