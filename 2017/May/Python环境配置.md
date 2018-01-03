@@ -28,6 +28,16 @@ A:一开始我以为这个问题是缺少zlib，所以通过homebrew 安装了zl
 #####Python virtualEnv
 virtualEnv 是一款配置不同Python 开发虚拟环境的插件。你可以通过它来安装不同的package。但是pyenv 为我们提供了一个更佳方便的插件 [pyenv-virtualenv][4]。啥也不说了，去按照官网的提示安装就好了。 同样是使用HomeBrew 安装。
 
+在你的~/.bash_profile 文件中添加如下两行。
+```
+eval "$(pyenv init -)"  
+eval "$(pyenv virtualenv-init -)"
+```
+接下来就是使用pyenv-virtualenv插件来配置虚拟开发环境了。
+你只要在shell 中运行`pyenv virtualenv <python-version> <virtualenv-name>`就可以建立自己的全新虚拟环境。
+
+输入`pyenv activate <virtualenv-name>`就可以激活对应的虚拟环境了。
+
 ####总结
 sublime text 3 + pyenv + pyenv-virtualenv = “简单、够用的python开发学习环境”。
 
